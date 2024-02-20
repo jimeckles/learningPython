@@ -1,8 +1,7 @@
 import sys
 
 x = 1
-
-if(x==1):
+if x == 1:
     print("Hello World1")
 else:
     print("not")
@@ -11,20 +10,20 @@ myfloat = float(4)
 mystring = "this is it"
 print(myfloat)
 
-mixer = str(myfloat) + mystring
+mixer = str(4.09) + "mystring"
 print(mixer)
 
 v1, v2 = 4.5, "hello"
 print(v1)
 
-if(isinstance('flower', float)):
+if isinstance("flower", float):
     print("hello is float")
 else:
-    print('hello is not float')
+    print("hello is not float")
 
-myList = ['a', 'b', 'c', 1.2, 3]
+myList = ["a", "b", "c", 1.2, 3]
 
-myList.append('end')
+myList.append("end")
 for x in myList:
     print(x)
 
@@ -39,12 +38,12 @@ print(3 / 4.0)
 
 print("mutiply strings fun %s" % "hello " * 5)
 
-l1,l2 = [1,2],[3,4]
-l3=l1+l2
+l1, l2 = [1, 2], [3, 4]
+l3 = l1 + l2
 print("add arrays using + %s" % l3)
-print("add arrays using + %s" % ([1,2]+[3,4]))
+print("add arrays using + %s" % ([1, 2] + [3, 4]))
 
-print("repeating %s" % l3*4)
+print("repeating %s" % l3 * 4)
 
 x = object()
 y = object()
@@ -54,9 +53,9 @@ x_list = [x]
 y_list = [y]
 big_list = []
 
-x_list = x_list*10
-y_list = y_list*10
-big_list=x_list+y_list
+x_list = x_list * 10
+y_list = y_list * 10
+big_list = x_list + y_list
 
 print("x_list contains %d objects" % len(x_list))
 print("y_list contains %d objects" % len(y_list))
@@ -68,14 +67,16 @@ if x_list.count(x) == 10 and y_list.count(y) == 10:
 if big_list.count(x) == 10 and big_list.count(y) == 10:
     print("Great!")
 
-print("hello %s is %d" % ('bob', 3.4))
+print("hello %s is %d" % ("bob", 3.4))
 
-print(len('this'))
+print(len("this"))
 
-print("this is it".index('s'))
+print("this is it".index("s"))
 
 print("slice a string %s" % "this is it"[1:-1])
-print("slice a string %s" % "this is it"[1:-1:2])#[start:stop:step].
+print("slice a string %s" % "this is it"[1:-1:2])  # [start:stop:step].
 print("reverse a string % s" % "reverse a string"[::-1])
 print("to upper %s" % "to upper".upper())
-
+mybool = "starts with".startswith("starts")
+print("starts with %s" % "starts with".startswith("starts"))
+print("split me %s" % "split me".split(" "))
