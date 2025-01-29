@@ -80,3 +80,14 @@ print("to upper %s" % "to upper".upper())
 mybool = "starts with".startswith("starts")
 print("starts with %s" % "starts with".startswith("starts"))
 print("split me %s" % "split me".split(" "))
+
+myGlobal = "hello"
+
+
+def localVarFun():
+    myGlobal = "cant"
+    print("tis global now " + myGlobal)
+
+
+localVarFun()
+print("post localVarFun " + myGlobal)
