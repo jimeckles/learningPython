@@ -1,5 +1,5 @@
 import unittest
-from help import Help
+from decorators.help import Help
 
 
 class TestLearning(unittest.TestCase):
